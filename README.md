@@ -87,7 +87,7 @@ Feel free to submit issues, feature requests, or pull requests to improve the fu
 
 ### Author
 
-**Your Name**  
+**Gabor Puskas**  
 [GitHub](https://github.com/Savalinn)  
 [LinkedIn](https://www.linkedin.com/in/gaborpuskas/)
 
