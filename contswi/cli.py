@@ -14,10 +14,21 @@ import tty
 
 def get_contexts():
     result = subprocess.run(["kubectl", "config", "get-contexts"], capture_output=True, text=True)
+    if result.returncode != 0:
+        print("Error: Failed to retrieve contexts from kubectl.")
+        sys.exit(1)
+
     contexts = []
     current_context = None
-    
-    for line in result.stdout.splitlines()[1:]:
+
+    lines = result.stdout.splitlines()
+
+    header_fields = lines[0].split()
+    if len(header_fields) != 5:
+        print("Error: Unexpected header format. Expected 5 fields in the header.")
+        sys.exit(1)
+
+    for line in lines[1:]:
         fields = line.split()
         if fields:
             if '*' in fields[0]:
