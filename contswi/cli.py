@@ -78,7 +78,7 @@ def main():
         selected_context = menu(contexts, current_context)
         set_context(selected_context)
     except KeyboardInterrupt:
-        print("\nA program megszakítva.")
+        print("nProgram interrupted")
         sys.exit(1)
 
 if __name__ == "__main__":
