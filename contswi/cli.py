@@ -82,7 +82,9 @@ def menu(contexts, current_context):
         print_menu(contexts, current_selection)
 
 def set_context(selected_context):
+    print("\n")
     subprocess.run(["kubectl", "config", "use-context", selected_context])
+    print("\n")
 
 def main():
     contexts, current_context = get_contexts()
