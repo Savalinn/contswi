@@ -11,7 +11,6 @@ import subprocess
 import sys
 import termios
 import tty
-import signal
 
 def get_contexts():
     result = subprocess.run(["kubectl", "config", "get-contexts"], capture_output=True, text=True)
@@ -21,9 +20,11 @@ def get_contexts():
     for line in result.stdout.splitlines()[1:]:
         fields = line.split()
         if fields:
-            context_name = fields[1]
             if '*' in fields[0]:
+                context_name = fields[1]
                 current_context = context_name
+            else:
+                context_name = fields[0]
             contexts.append(context_name)
     
     return contexts, current_context
