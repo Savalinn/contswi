@@ -13,7 +13,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/Savalinn/contswi',  # ide jön a GitHub repo link
-    author='Puskás Gábor',
+    author='Gabor Puskas',
     author_email='pg@0r.hu',
     license='MIT',
     classifiers=[
