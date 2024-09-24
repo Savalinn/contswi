@@ -21,6 +21,10 @@ Before using `contswi`, ensure you have the following set up:
 
 ## Installation
 
+You can install the `contswi` tool in two ways: directly from the source code or via pip.
+
+### 1. Installing from Source
+
 1. **Clone the repository**:
 
    ```bash
@@ -28,13 +32,22 @@ Before using `contswi`, ensure you have the following set up:
    cd contswi
    ```
 
-2. **Install the tool via pip**:
+2. **Install the tool**:
 
-   After you have cloned the repository, you can install the tool locally:
+   After cloning the repository, you can install the tool locally with pip:
 
    ```bash
    pip install .
    ```
+
+### 2. Installing via pip
+
+To install the tool directly from PyPI, simply run:
+
+```bash
+pip install contswi
+```
+
 
 ## Usage
 
