@@ -1,3 +1,13 @@
+# ------------------------------------------------------------
+# Filename: setup.py
+# Description: Setup script for the contswi tool.
+# Author: Gabor Puskas
+# Email: pg@0r.hu
+# Date: 2024-09-24
+# Version: 0.1
+# Dependencies: setuptools, kubectl
+# Usage: Run this file to package and install the contswi CLI tool.
+# ------------------------------------------------------------
 from setuptools import setup, find_packages
 
 setup(

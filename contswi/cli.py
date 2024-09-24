@@ -1,3 +1,12 @@
+# ------------------------------------------------------------
+# Filename: cli.py
+# Description: Command-line tool to switch Kubernetes contexts
+# Author: Gabor Puskas
+# Email: pg@0r.hu
+# Date: 2024-09-24
+# Version: 0.1
+# Dependencies: kubectl, subprocess, termios
+# ------------------------------------------------------------
 import subprocess
 import sys
 import termios
