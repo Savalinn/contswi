@@ -9,7 +9,7 @@
 - Easily switch between contexts using an interactive, arrow-key driven menu.
 - Clean, responsive, and simple interface that fits into any Kubernetes workflow.
 
-## Usecases on video
+## Video Demonstration of Use Cases
 ![contswi usecases](usecases.gif)
 
 ## Requirements
