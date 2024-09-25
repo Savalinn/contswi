@@ -64,6 +64,7 @@ def read_key():
 
 def menu(contexts, current_context):
     current_selection = contexts.index(current_context) if current_context else 0
+    sys.stdout.write("\nPlease select a new Kubernetes context::\n\n")
     sys.stdout.write("\n" * len(contexts))
     sys.stdout.flush()
     print_menu(contexts, current_selection)
