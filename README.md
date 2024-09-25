@@ -9,9 +9,6 @@
 - Easily switch between contexts using an interactive, arrow-key driven menu.
 - Clean, responsive, and simple interface that fits into any Kubernetes workflow.
 
-## Video Demonstration of Use Cases
-![contswi usecases](usecases.gif)
-
 ## Requirements
 
 Before using `contswi`, ensure you have the following set up:
@@ -51,6 +48,7 @@ To install the tool directly from PyPI, simply run:
 pip install contswi
 ```
 
+![pip install contswi](docs/install.gif)
 
 ## Usage
 
@@ -61,6 +59,8 @@ Once installed, you can use the `contswi` tool to interactively switch Kubernete
 ```bash
 contswi
 ```
+
+![contswi how to use](docs/use.gif)
 
 ### Key Bindings
 
@@ -86,6 +86,28 @@ contswi
    ```
 
 4. You will see the selected context become the active one.
+
+## Using with k9s
+
+We love `k9s`—it’s one of the best, if not the best, Kubernetes IDE out there, and we thank **Fernand Galiana** for creating this fantastic tool. To make your experience even smoother, you can integrate `contswi` with `k9s` to ensure that every time you launch `k9s`, you first select your Kubernetes context conveniently.
+
+To do this, add the following alias to your `.bashrc` file:
+
+```bash
+alias k9="contswi && k9s"
+```
+
+Then, reload your shell configuration by running:
+
+```bash
+source ~/.bashrc
+```
+
+This setup ensures that each time you run `k9`, you are prompted to select the desired Kubernetes context through `contswi` before launching `k9s`. This allows you to comfortably switch between clusters and environments, enhancing your productivity when managing Kubernetes resources.
+
+For more information on `k9s`, check out the [official repository](https://github.com/derailed/k9s).
+
+![contswi with k9s](docs/k9s.gif)
 
 ## Error Handling
 
